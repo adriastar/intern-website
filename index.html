@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NAME? </title>
+    <link rel="icon" type="image/x-icon" href="media/DBLOGO_.png">
+    <style>
+        /* font lexend */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        html {
+        scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0E0E0E; 
+            padding: 20px 60px;
+            transition: 0.5s;
+            border-bottom-color: #3D0505;
+            border-bottom-style: solid;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo a {
+            margin: 0;
+            text-decoration: none;
+            font-size: 50px;
+            margin-left: 15px;
+            font-size: 32px; 
+            color: #F9F9F9;
+        }
+
+        nav {
+            display: flex;
+            align-items: flex-start;
+            flex-shrink: 0;
+            padding: 10px 35px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        /* BODY */
+        body {
+            font-family: "Playfair Display", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0E0E0E;
+            position: relative;
+            z-index: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template: auto;
+            margin: 0px 200px;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #F9F9F9;
+        }
+        /* FRAME 1 */
+
+        .item1 {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 800px) {
+        .column {
+            width: 100%;
+        }
+        }
+
+        .img-ldg {
+            position: relative;
+        }
+
+        .img-ldg img {
+            max-width: 478px;
+            width: 290px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .img-ldg:hover .overlay {
+            opacity: 0.8;
+        }
+
+        .text a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+/* FRAME 2 */
+
+        .item2 , .item3 , .item4 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .gallery {
+            padding: 10px 10px;
+            float: left;
+            width: 33%;
+        }
+
+        .gallery img {
+            max-width: 480px;
+            width: 300px;
+        }
+        @media only screen and (max-width: 700px) {
+        .gallery {
+            width: 49.99999%;
+            margin: 10px 10px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+        .gallery {
+            width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+
+</style> 
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <i class="fa-sharp fa-regular fa-moon fa-2xl" style="color: #F9F9F9;"></i>
+                <a href="index.html">NAME?</a>
+            </div>
+<!-- NAV BAR -->
+        <nav>
+            <ul>
+                <li><i class="fa fa-bars fa-xl" style="color: #F9F9F9;"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- GRID STARTS -->
+    <div class="grid-container">
+        <!-- FRAME 1 -->
+        <div class="item1">
+            <div class="row">
+                <div class="column">
+                  <div class="img-ldg">
+                    <img src="bmth-1.png" alt="bmthldg" >
+                        <div class="overlay">
+                            <div class="text"><a href="#sec-bmth">Bring Me The Horizon</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img-ldg">
+                        <img src="nd-4.png" alt="ndldg" >
+                            <div class="overlay">
+                                <div class="text"><a href="#sec-nd">Neck Deep</a></div>
+                            </div>
+                        </div>
+                </div>
+                <div class="column">
+                    <div class="img-ldg">
+                        <img src="wtk-3.png" alt="wtkldg">
+                            <div class="overlay">
+                                <div class="text"><a href="#sec-wtk">We The Kings</a></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FRAME 2 -->
+        <div class="item2" id="sec-bmth">
+            <h1>Bring Me The Horizon</h1>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-1.png" alt="bmth1">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-2.png" alt="bmth2">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-3.png" alt="bmth3">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-4.png" alt="bmth4">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-5.png" alt="bmth5">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-6.png" alt="bmth6">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-7.png" alt="bmth7">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-8.png" alt="bmth8">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="bmth-9.png" alt="bmth9">
+                    </div>
+                </div>
+        </div>
+        <!-- FRAME 3 -->
+        <div class="item3" id="sec-nd">
+            <h1>Neck Deep</h1>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-1.png" alt="nd1">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-2.png" alt="nd2">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-3.png" alt="nd3">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-4.png" alt="nd4">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-5.png" alt="nd5">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-6.png" alt="nd6">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-7.png" alt="nd7">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-8.png" alt="nd8">
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="gal-pic">
+                        <img src="nd-9.png" alt="nd9">
+                    </div>
+                </div>
+        </div>
+        <!-- FRAME 4 -->
+        <div class="item4" id="sec-wtk">
+            <h1>We The Kings</h1> 
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-1.png" alt="wtk1">
+                </div>
+            </div>  
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-2.png" alt="wtk2">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-3.png" alt="wtk3">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-4.png" alt="wtk4">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-5.png" alt="wtk5">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-6.png" alt="wtk6">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-7.png" alt="wtk7">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-8.png" alt="wtk8">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gal-pic">
+                    <img src="wtk-9.png" alt="wtk9">
+                </div>
+            </div>    
+        </div>
+    </div>           
+
